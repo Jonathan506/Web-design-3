@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ing. Blandón">
-    <meta name="description" content="Maquetado WireFrame">
-    <title>WireFrame</title>
+    <meta name="description" content="Web Design 3">
+    <title>Web Design 3</title>
     <link rel="icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="/assets/css/Styles.css" media="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/js/scrollomatic.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a.scroll").scrollomatic(); 
+        });
+    </script>
 </head>
 <body>
     <div id="redes">
@@ -28,9 +35,9 @@
                 </ul>
             </div>
             <div id="mensaje">
-                <h2>Bienvenido al WireFrame</h2>
+                <h2>Welcome</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quod?</p>
-                <a href="#principal">Leer m&aacute;s</a>
+                <a href="#principal" class="scroll">Leer m&aacute;s</a>
             </div>
         </div>
         <div id="principal">
@@ -43,7 +50,7 @@
     </div>
     <footer id="footer">
         <p><small>&copy; Todos los derechos reservados.</small></p>
-        <a href="#contenedor"><img src="/assets/img/arriba.png" alt="Volver arriba"></a>
+        <a href="#contenedor" class="scroll"><img src="/assets/img/arriba.png" alt="Volver arriba"></a>
     </footer>
 </body>
 </html>

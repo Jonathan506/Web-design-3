@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -30,7 +31,7 @@ body{
 }
 
 #logo{
-    width: 21%;
+    width: 25%;
     float: left;
     /*display: inline;*/
     color: #fff;
@@ -63,12 +64,8 @@ body{
     padding: 5px 20px;
 }
 
-#menu ul li a:hover, #menu ul li a#activo:hover{
+#menu ul li a:hover{
     border-bottom: 2px solid #fff;
-}
-
-#menu ul li a#activo{
-    border-bottom: 1px solid #fff;
 }
 
 #mensaje{
@@ -98,6 +95,7 @@ body{
 }
 
 #mensaje a{
+    border-radius: 20px;
     position: relative;
     font-size: 14px;
     top: 210px;
@@ -105,6 +103,11 @@ body{
     color: #fff;
     border: 2px solid;
     padding: 10px 30px;
+}
+
+#mensaje a:hover{
+    background-color: #fff;
+    color: #f60;
 }
 
 #principal{
@@ -119,7 +122,7 @@ body{
 
 #principal h1{
     color: #f60;
-    background-image: url(/img/nube-naranja.png);
+    background-image: url(/assets/img/nube-naranja.png);
     background-repeat: no-repeat;
     background-position: center left;
     padding-left: 30px;
@@ -131,6 +134,7 @@ body{
     color: #666;
     letter-spacing: 1px;
     line-height: 1.9;
+    text-align: justify;
 }
 
 #principal hr{
@@ -148,7 +152,7 @@ body{
     background: #ccc;
     text-align: center;
     position: relative;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 #footer p small{
     color: #555;
@@ -156,6 +160,5 @@ body{
 }
 
 #footer img{
-    position: absolute;
-    padding: 20px 0;
+    padding: 10px 0;
 }
