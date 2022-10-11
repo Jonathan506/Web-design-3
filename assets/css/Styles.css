@@ -18,7 +18,7 @@ body{
 .header{
     background-image: url(/assets/img/fondo.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top left;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -26,7 +26,7 @@ body{
 }
 
 .header-content{
-    background-color: rgba(255, 102, 0,.8);
+    background-color: rgba(255, 102, 0,.5);
     height: 100vh;
 }
 
