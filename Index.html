@@ -23,14 +23,14 @@
         <a href="#" target="_blank"><img src="/assets/img/twitter.png" alt="Twitter" title="Twitter"></a>
     </div>
     <header class="header">
-        <div class="header-content">
+        <div class="header-content" id="home">
             <div class="main-header">
                 <div class="logo">
                     <p>Logo</p>
                 </div>
                 <nav class="navegation">
                     <ul class="header-list">
-                        <li><a href="Index.html" class="header-list-link" id="activo">About Us</a></li>
+                        <li><a href="#principal" class="scroll header-list-link" id="activo">About Us</a></li>
                         <li><a href="#" class="header-list-link">Services</a></li>
                         <li><a href="#" class="header-list-link">Galery</a></li>
                         <li><a href="#" class="header-list-link">Contact</a></li>
@@ -39,23 +39,31 @@
             </div>
             <div class="header-center">
                 <h2 class="header-center-title">Welcome</h2>
-                <p>Hacemos realidad tus sueños</p>
-                <a href="#principal" class="scroll">Leer m&aacute;s</a>
+                <p class="header-center-paragraph">Hacemos realidad tus sueños</p>
+                <a href="#principal" class="scroll header-center-link">Leer m&aacute;s</a>
             </div>
         </div>
     </header>
-    <div id="contenedor">
-        <div id="principal">
-            <img src="/assets/img/laptop.jpg" alt="Laptop" title="Laptop">
-            <h1>WireFrame</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero illum recusandae eius voluptas quis ea laudantium reiciendis omnis, sit natus velit aspernatur! Fugit, nobis doloribus deserunt necessitatibus illum optio autem quo similique ex eligendi earum voluptatem maiores, impedit veritatis rerum officiis! Doloremque temporibus eius alias facere at dolore incidunt expedita facilis! Quas error ea nihil consequatur perspiciatis temporibus iusto et corporis, voluptas reprehenderit asperiores nesciunt sapiente debitis voluptate alias consectetur sit laboriosam fuga eius commodi incidunt, earum totam nam veniam! Sequi vitae dolorem, voluptatum illum ipsum beatae quos cumque impedit perspiciatis esse perferendis velit expedita veritatis, magnam nam voluptas assumenda?</p>
-            <hr>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31441.134005556636!2d-84.11545600000001!3d9.9221504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1646289470758!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-    <footer id="footer">
-        <p><small>&copy; Todos los derechos reservados.</small></p>
-        <a href="#contenedor" class="scroll"><img src="/assets/img/arriba.png" alt="Volver arriba"></a>
+    <main>
+        <section id="principal" class="main-content">
+            <div class="principal-content">
+                <div class="div-paragraph">
+                    <h1 class="section-title">WireFrame</h1>
+                    <p class="section-p" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero illum recusandae eius voluptas quis ea laudantium reiciendis omnis, sit natus velit aspernatur! Fugit, nobis doloribus deserunt necessitatibus illum optio autem quo similique ex eligendi earum voluptatem maiores, impedit veritatis rerum officiis! Doloremque temporibus eius alias facere at dolore incidunt expedita facilis! Quas error ea nihil consequatur perspiciatis temporibus iusto et corporis, voluptas reprehenderit asperiores nesciunt sapiente debitis voluptate alias consectetur sit laboriosam fuga eius commodi incidunt, earum totam nam veniam! Sequi vitae dolorem, voluptatum illum ipsum beatae quos cumque impedit perspiciatis esse perferendis velit expedita veritatis, magnam nam voluptas assumenda?</p>
+                </div>
+                <div class="div-image">
+                    <img src="/assets/img/laptop.jpg" class="image-section" alt="Laptop">
+                </div>
+            </div>
+        </section>
+        <section class="main-content">
+            <hr class="line">
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31441.134005556636!2d-84.11545600000001!3d9.9221504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1646289470758!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copy"><small>copyright &copy; 2022 Jonathan Blandón - Todos los derechos reservados</small></p>
+        <a href="#home" class="scroll footer-link"><img class="footer-link-image" src="/assets/img/arriba.png" alt="Volver arriba"></a>
     </footer>
 </body>
 </html>
