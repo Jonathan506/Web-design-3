@@ -18,28 +18,33 @@
     </script>
 </head>
 <body>
-    <div id="redes">
-        <a href="#"><img src="/assets/img/facebook.png" alt="Facebook" title="Facebook"></a>
-        <a href="#"><img src="/assets/img/twitter.png" alt="Twitter" title="Twitter"></a>
+    <div class="redes">
+        <a href="https://www.facebook.com/" target="_blank"><img src="/assets/img/facebook.png" alt="Facebook" title="Facebook"></a>
+        <a href="#" target="_blank"><img src="/assets/img/twitter.png" alt="Twitter" title="Twitter"></a>
     </div>
-    <div id="contenedor">
-        <div id="cabecera">
-            <div id="logo">Logo</div>
-            <div id="menu">
-                <ul>
-                    <li><a href="Index.html" id="activo">Home</a></li>
-                    <li><a href="#">Temario</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Galer&iacute;a</a></li>
-                    <li><a href="#">Cont&aacute;ctenos</a></li>
-                </ul>
+    <header class="header">
+        <div class="header-content">
+            <div class="main-header">
+                <div class="logo">
+                    <p>Logo</p>
+                </div>
+                <nav class="navegation">
+                    <ul class="header-list">
+                        <li><a href="Index.html" class="header-list-link" id="activo">About Us</a></li>
+                        <li><a href="#" class="header-list-link">Services</a></li>
+                        <li><a href="#" class="header-list-link">Galery</a></li>
+                        <li><a href="#" class="header-list-link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div id="mensaje">
-                <h2>Welcome</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quod?</p>
+            <div class="header-center">
+                <h2 class="header-center-title">Welcome</h2>
+                <p>Hacemos realidad tus sueños</p>
                 <a href="#principal" class="scroll">Leer m&aacute;s</a>
             </div>
         </div>
+    </header>
+    <div id="contenedor">
         <div id="principal">
             <img src="/assets/img/laptop.jpg" alt="Laptop" title="Laptop">
             <h1>WireFrame</h1>

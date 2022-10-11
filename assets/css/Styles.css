@@ -1,113 +1,125 @@
 *{
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body{
-    background-image: url(/assets/img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-#contenedor{
-    width: 960px;
-    margin: 0 auto;
-    /*border: 1px solid;*/
-    list-style-position: inside;
-}
-
-#redes{
+.redes{
     position: fixed;
     right: 0;
     top: 420px;
     width: 36px;
 }
 
-#cabecera{
+.header{
+    background-image: url(/assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
     position: relative;
-    padding-top: 20px;
 }
 
-#logo{
-    width: 25%;
-    float: left;
-    /*display: inline;*/
-    color: #fff;
-    font-size: 34px;
+.header-content{
+    background-color: rgba(255, 102, 0,.8);
+    height: 100vh;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.logo{
     background-image: url(/assets/img/nube.png);
     background-repeat: no-repeat;
     background-position: left center;
-    padding-left: 4%;
+    color: #fff;
+    font-size: 34px;
+    padding-left: 35px;
 }
 
-#menu{
-    width: 75%;
-    float: left;
-    text-align: right;
-    padding-top: 15px;
+.navegation{
+    width: 50%;
 }
 
-#menu ul{
+.header-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
 }
 
-#menu ul li{
-    display: inline-block;
-}
-
-#menu ul li a{
+.header-list-link{
     color: #fff;
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    padding: 5px 20px;
-}
-
-#menu ul li a:hover{
-    border-bottom: 2px solid #fff;
-}
-
-#mensaje{
-    clear:both;
-    height: 340px;
-    position: relative;
-    text-align: center;
-    color: #fff;
-    background-image: url(/img/nube-mensaje.png);
-    background-repeat: no-repeat;
-    background-position: center 90px;
-}
-
-#mensaje h2{
-    position: relative;
-    font-size: 32px;
     text-transform: uppercase;
-    font-weight: normal;
-    top: 160px;
+}
+
+.header-list-link:hover{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+/***************************************************/
+#contenedor{
+    width: 960px;
+    margin: 0 auto;
+    /*border: 1px solid;*/
+    list-style-position: inside;
+}
+/***************************************************/
+
+.header-center{
+    background-image: url(/assets/img/nube-mensaje.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: #fff;
+    padding-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.header-center-title{
+    font-size: 3rem;
+    letter-spacing: 2px;
 }
 
 #mensaje p{
-    position: relative;
+    /* position: relative;
     font-size: 18px;
     top: 170px;
-    letter-spacing: 4px;
+    letter-spacing: 4px; */
 }
 
 #mensaje a{
-    border-radius: 20px;
+    /* border-radius: 20px;
     position: relative;
     font-size: 14px;
     top: 210px;
     text-decoration: none;
     color: #fff;
     border: 2px solid;
-    padding: 10px 30px;
+    padding: 10px 30px; */
 }
 
 #mensaje a:hover{
-    background-color: #fff;
-    color: #f60;
+    /* background-color: #fff;
+    color: #f60; */
 }
 
 #principal{
